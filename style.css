@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(210, 36%, 96%);
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  display: grid;
+  place-items: center;
+  margin-bottom: 4rem;
+}
+.title h2 {
+  font-size: 2.8rem;
+  letter-spacing: 0.25rem;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  width: 35rem;
+  margin-left: 2rem;
+  background: white;
+  border-radius: 10px;
+}
+.btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+.btn {
+  background-color: hsl(212, 33%, 89%);
+  border: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: hsl(205, 81%, 81%);
+  color: hsl(209, 44%, 43%);
+}
+.btn:nth-child(3) {
+  border-top-right-radius: 0.5rem;
+}
+.btn:nth-child(1) {
+  border-top-left-radius: 0.5rem;
+}
+.pic {
+  width: 569px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.para {
+  padding: 0rem 1.5rem;
+}
+.para span {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+p {
+  color: hsl(209, 23%, 60%);
+}
+.para p {
+  margin-top: 1rem;
+}
+.active {
+  background: white;
+}
